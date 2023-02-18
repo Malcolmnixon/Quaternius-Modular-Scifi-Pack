@@ -8,6 +8,22 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Spatial",
+"class": "QuaterniusDoor",
+"language": "GDScript",
+"path": "res://addons/quaternius-modular-scifi-pack/doors/scripts/door.gd"
+}, {
+"base": "KinematicBody",
+"class": "QuaterniusDoorBody",
+"language": "GDScript",
+"path": "res://addons/quaternius-modular-scifi-pack/doors/scripts/door_body.gd"
+} ]
+_global_script_class_icons={
+"QuaterniusDoor": "",
+"QuaterniusDoorBody": ""
+}
+
 [application]
 
 config/name="Quaternius Modular Scifi Pack"

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_meshlibrary/modular_scifi.meshlib" type="MeshLibrary" id=1]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/meshlibrary/modular_scifi.meshlib" type="MeshLibrary" id=1]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/doors/door_double.tscn" type="PackedScene" id=2]
 
 [node name="Hall" type="Spatial"]
 
@@ -17,3 +18,11 @@ __meta__ = {
 "_editor_clip_": 0,
 "_editor_floor_": Vector3( 0, 4, 0 )
 }
+
+[node name="Doors" type="Spatial" parent="."]
+
+[node name="DoorDouble1" parent="Doors" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
+
+[node name="DoorDouble2" parent="Doors" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3 )

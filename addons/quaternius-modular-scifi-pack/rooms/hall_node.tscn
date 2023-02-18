@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/door_double_long_wall_side_a.tscn" type="PackedScene" id=1]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/wall_empty.tscn" type="PackedScene" id=2]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/floor_tile_double.tscn" type="PackedScene" id=3]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/roof_tile_empty.tscn" type="PackedScene" id=4]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/roof_tile_light.tscn" type="PackedScene" id=5]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/door_double_long_wall_side_a.tscn" type="PackedScene" id=1]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/wall_empty.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/floor_tile_double.tscn" type="PackedScene" id=3]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/roof_tile_empty.tscn" type="PackedScene" id=4]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/roof_tile_light.tscn" type="PackedScene" id=5]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/doors/door_double.tscn" type="PackedScene" id=6]
 
 [node name="Hall" type="Spatial"]
 
@@ -133,3 +134,11 @@ transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 9, 4, 1
 
 [node name="RoofTileEmpty8" parent="Ceiling" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 9, 4, -1 )
+
+[node name="Doors" type="Spatial" parent="."]
+
+[node name="DoorDouble1" parent="Doors" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
+
+[node name="DoorDouble2" parent="Doors" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3 )

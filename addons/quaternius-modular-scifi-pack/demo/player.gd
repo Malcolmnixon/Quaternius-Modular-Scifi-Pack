@@ -104,4 +104,6 @@ func _handle_mouse_click():
 
 # Handle object click
 func _handle_object_click(object : Spatial):
-	pass
+	# If clicking on a door then open/close it
+	if object is QuaterniusDoorBody:
+		object.door.opened = !object.door.opened

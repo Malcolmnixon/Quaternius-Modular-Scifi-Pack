@@ -1,25 +1,26 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/floor_tile_side.tscn" type="PackedScene" id=1]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/floor_tile_empty.tscn" type="PackedScene" id=2]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/floor_tile_basic.tscn" type="PackedScene" id=3]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/door_single_wall_side_a.tscn" type="PackedScene" id=4]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/door_single_wall_side_b.tscn" type="PackedScene" id=5]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/window_wall_side_b.tscn" type="PackedScene" id=6]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/floor_tile_corner.tscn" type="PackedScene" id=7]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/window_wall_side_a.tscn" type="PackedScene" id=8]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/wall_1.tscn" type="PackedScene" id=9]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/wall_4.tscn" type="PackedScene" id=10]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/wall_3.tscn" type="PackedScene" id=11]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/wall_2.tscn" type="PackedScene" id=12]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/column_3.tscn" type="PackedScene" id=13]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/roof_tile_light.tscn" type="PackedScene" id=14]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/column_slim.tscn" type="PackedScene" id=15]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/roof_tile_empty.tscn" type="PackedScene" id=16]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/wall_5.tscn" type="PackedScene" id=17]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/map_bodies/door_double_wall_side_b.tscn" type="PackedScene" id=18]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/props_bodies/props_shelf_tall.tscn" type="PackedScene" id=19]
-[ext_resource path="res://addons/quaternius-modular-scifi-pack/props_bodies/props_pod.tscn" type="PackedScene" id=21]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/floor_tile_side.tscn" type="PackedScene" id=1]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/floor_tile_empty.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/floor_tile_basic.tscn" type="PackedScene" id=3]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/door_single_wall_side_a.tscn" type="PackedScene" id=4]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/door_single_wall_side_b.tscn" type="PackedScene" id=5]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/window_wall_side_b.tscn" type="PackedScene" id=6]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/floor_tile_corner.tscn" type="PackedScene" id=7]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/window_wall_side_a.tscn" type="PackedScene" id=8]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/wall_1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/wall_4.tscn" type="PackedScene" id=10]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/wall_3.tscn" type="PackedScene" id=11]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/wall_2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/column_3.tscn" type="PackedScene" id=13]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/roof_tile_light.tscn" type="PackedScene" id=14]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/column_slim.tscn" type="PackedScene" id=15]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/roof_tile_empty.tscn" type="PackedScene" id=16]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/wall_5.tscn" type="PackedScene" id=17]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/bodies/door_double_wall_side_b.tscn" type="PackedScene" id=18]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/props/bodies/props_shelf_tall.tscn" type="PackedScene" id=19]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/doors/door_single.tscn" type="PackedScene" id=20]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/props/bodies/props_pod.tscn" type="PackedScene" id=21]
 
 [node name="ScienceLab" type="Spatial"]
 
@@ -585,6 +586,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 10 )
 
 [node name="PropsPod" parent="Objects" instance=ExtResource( 21 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 5 )
+
+[node name="Doors" type="Spatial" parent="."]
+
+[node name="DoorSingle" parent="Doors" instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.5 )
 
 [node name="OmniLight" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -8 )
