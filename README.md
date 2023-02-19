@@ -1,5 +1,6 @@
 # Quaternius-Modular-Scifi-Pack
-This repository contains the Quaternius Modular Scifi Pack converted to a Godot asset.
+This repository contains the [Quaternius Ultimate Modular Scifi Pack](https://quaternius.com/packs/ultimatemodularscifi.html)
+converted to a Godot asset. If you like the asset, consider supporting them on [Patreon](https://www.patreon.com/quaternius).
 
 ![](img/screenshot.png)
 
