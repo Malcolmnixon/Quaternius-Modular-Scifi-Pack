@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/props/bodies/props_crate_long.tscn" type="PackedScene" id=1]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/props/bodies/props_crate.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/props/bodies/props_shelf_tall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/meshlibrary/modular_scifi.meshlib" type="MeshLibrary" id=4]
+
+[node name="StorageRoom" type="Spatial"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 4 )
+use_in_baked_light = true
+cell_size = Vector3( 1, 1, 1 )
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+data = {
+"cells": PoolIntArray( 0, 0, 26, 4, 0, 43, 6, 0, 655362, 65530, 0, 655362, 65532, 0, 43, 1, 1, 1441797, 3, 1, 1441797, 5, 1, 1441796, 65531, 1, 4, 65533, 1, 1441797, 65535, 1, 1441797, 262145, 1, 131116, 262147, 1, 131083, 262149, 1, 131083, 327675, 1, 131083, 327677, 1, 131083, 327679, 1, 131116, 6, 2, 1441835, 65530, 2, 1048619, 1, 3, 655368, 3, 3, 655368, 5, 3, 655365, 65531, 3, 5, 65533, 3, 655368, 65535, 3, 655368, 262145, 3, 131083, 262147, 3, 131083, 262149, 3, 131083, 327675, 3, 131083, 327677, 3, 131083, 327679, 3, 131083, 1, 5, 655368, 3, 5, 655368, 5, 5, 655365, 65531, 5, 5, 65533, 5, 655368, 65535, 5, 655368, 262145, 5, 131116, 262147, 5, 131083, 262149, 5, 131083, 327675, 5, 131083, 327677, 5, 131083, 327679, 5, 131116, 6, 6, 1441835, 65530, 6, 1048619, 1, 7, 655368, 3, 7, 655368, 5, 7, 655365, 65531, 7, 5, 65533, 7, 655368, 65535, 7, 655368, 262145, 7, 131116, 262147, 7, 131083, 262149, 7, 131083, 327675, 7, 131083, 327677, 7, 131083, 327679, 7, 131116, 6, 8, 655362, 8, 8, 43, 10, 8, 655362, 65526, 8, 655362, 65528, 8, 43, 65530, 8, 655362, 1, 9, 655368, 3, 9, 655368, 5, 9, 1441798, 7, 9, 1441797, 9, 9, 1441796, 65527, 9, 4, 65529, 9, 1441797, 65531, 9, 6, 65533, 9, 655368, 65535, 9, 655368, 262145, 9, 131083, 262147, 9, 1310742, 262149, 9, 131083, 262151, 9, 131083, 262153, 9, 131083, 327671, 9, 131083, 327673, 9, 131083, 327675, 9, 131083, 327677, 9, 1310742, 327679, 9, 131083, 10, 10, 1441835, 65526, 10, 1048619, 1, 11, 655368, 3, 11, 655368, 5, 11, 655368, 7, 11, 655368, 9, 11, 655365, 65527, 11, 5, 65529, 11, 655368, 65531, 11, 655368, 65533, 11, 655368, 65535, 11, 655368, 262145, 11, 131116, 262147, 11, 131083, 262149, 11, 131116, 262151, 11, 131116, 262153, 11, 131083, 327671, 11, 131083, 327673, 11, 131116, 327675, 11, 131116, 327677, 11, 131083, 327679, 11, 131116, 1, 13, 655368, 3, 13, 655368, 5, 13, 655368, 7, 13, 655370, 9, 13, 655365, 65527, 13, 5, 65529, 13, 655370, 65531, 13, 655368, 65533, 13, 655368, 65535, 13, 655368, 262145, 13, 131116, 262147, 13, 131083, 262149, 13, 131116, 262151, 13, 131116, 262153, 13, 131083, 327671, 13, 131083, 327673, 13, 131116, 327675, 13, 131116, 327677, 13, 131083, 327679, 13, 131116, 10, 14, 1441835, 65526, 14, 1048619, 1, 15, 655368, 3, 15, 655368, 5, 15, 655368, 7, 15, 655368, 9, 15, 655365, 65527, 15, 5, 65529, 15, 655368, 65531, 15, 655368, 65533, 15, 655368, 65535, 15, 655368, 262145, 15, 131116, 262147, 15, 131083, 262149, 15, 131116, 262151, 15, 131116, 262153, 15, 131083, 327671, 15, 1179663, 327673, 15, 131116, 327675, 15, 131116, 327677, 15, 131083, 327679, 15, 131116, 1, 17, 655368, 3, 17, 655368, 5, 17, 655368, 7, 17, 655368, 9, 17, 655365, 65527, 17, 5, 65529, 17, 655368, 65531, 17, 655368, 65533, 17, 655368, 65535, 17, 655368, 262145, 17, 131116, 262147, 17, 1310733, 262149, 17, 131116, 262151, 17, 131116, 262153, 17, 131083, 327671, 17, 524303, 327673, 17, 131116, 327675, 17, 131116, 327677, 17, 131083, 327679, 17, 131116, 10, 18, 1441835, 65526, 18, 1048619, 1, 19, 1048581, 3, 19, 1048581, 5, 19, 1048581, 7, 19, 1048581, 9, 19, 655364, 65527, 19, 1048580, 65529, 19, 1048581, 65531, 19, 1048581, 65533, 19, 1048581, 65535, 19, 1048581, 262145, 19, 131083, 262147, 19, 131083, 262149, 19, 131083, 262151, 19, 131083, 262153, 19, 131083, 327671, 19, 524299, 327673, 19, 131083, 327675, 19, 131083, 327677, 19, 131083, 327679, 19, 131083, 0, 20, 655403, 4, 20, 655403, 8, 20, 655403, 10, 20, 655362, 65526, 20, 655362, 65528, 20, 655403, 65532, 20, 655403 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 4, 0 )
+}
+
+[node name="Objects" type="Spatial" parent="."]
+
+[node name="PropsShelfTall1" parent="Objects" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 12 )
+
+[node name="PropsShelfTall2" parent="Objects" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 16 )
+
+[node name="PropsShelfTall3" parent="Objects" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 12 )
+
+[node name="PropsShelfTall4" parent="Objects" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 16 )
+
+[node name="PropsCrateLong1" parent="Objects" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 17.4 )
+
+[node name="PropsCrateLong2" parent="Objects" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 16.6 )
+
+[node name="PropsCrateLong3" parent="Objects" instance=ExtResource( 1 )]
+transform = Transform( -0.0871558, 0, -0.996195, 0, 1, 0, 0.996195, 0, -0.0871558, -7, 0.736375, 17 )
+
+[node name="PropsCrate1" parent="Objects" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4, 0, 10.6 )
+
+[node name="PropsCrate2" parent="Objects" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.6, 0, 10.6 )
+
+[node name="PropsCrate3" parent="Objects" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.6, 0, 11.4 )
+
+[node name="PropsCrate4" parent="Objects" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4, 0, 11.4 )
+
+[node name="PropsCrate5" parent="Objects" instance=ExtResource( 2 )]
+transform = Transform( 0.996195, 0, -0.0871557, 0, 1, 0, 0.0871557, 0, 0.996195, -7, 0.797244, 11 )
+
+[node name="Lights" type="Spatial" parent="."]
+
+[node name="OmniLight1" type="OmniLight" parent="Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 5 )
+omni_range = 8.0
+
+[node name="OmniLight2" type="OmniLight" parent="Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5, 14 )
+omni_range = 8.0
+
+[node name="OmniLight3" type="OmniLight" parent="Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 5, 14 )
+omni_range = 8.0

@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/doors/scripts/door.gd" type="Script" id=1]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/doors/bodies/door_single.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/doors/scripts/door_body.gd" type="Script" id=3]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/doors/sounds/door_sound.ogg" type="AudioStream" id=4]
+
+[node name="DoorSingle" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="DoorSingle" parent="." groups=["door"] instance=ExtResource( 2 )]
+script = ExtResource( 3 )
+distance = Vector3( 1.4, 0, 0 )
+
+[node name="DoorSound" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0 )
+stream = ExtResource( 4 )

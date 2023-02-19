@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/doors/door_double.tscn" type="PackedScene" id=1]
+[ext_resource path="res://addons/quaternius-modular-scifi-pack/map/meshlibrary/modular_scifi.meshlib" type="MeshLibrary" id=2]
+
+[node name="HallEnd" type="Spatial"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 2 )
+use_in_baked_light = true
+cell_size = Vector3( 1, 1, 1 )
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+data = {
+"cells": PoolIntArray( 0, 0, 24, 2, 0, 2, 65534, 0, 2 )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="DoorDouble" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
