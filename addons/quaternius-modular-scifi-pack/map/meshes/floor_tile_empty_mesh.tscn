@@ -34,5 +34,6 @@ surfaces/1 = {
 }
 
 [node name="FloorTileEmptyMesh" type="MeshInstance"]
+cast_shadow = 2
 use_in_baked_light = true
 mesh = SubResource( 1 )

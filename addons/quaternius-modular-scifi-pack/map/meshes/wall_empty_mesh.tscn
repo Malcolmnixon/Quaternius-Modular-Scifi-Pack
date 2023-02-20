@@ -62,5 +62,6 @@ surfaces/3 = {
 }
 
 [node name="WallEmptyMesh" type="MeshInstance"]
+cast_shadow = 2
 use_in_baked_light = true
 mesh = SubResource( 1 )
